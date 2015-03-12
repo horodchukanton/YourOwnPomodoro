@@ -1,0 +1,232 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'YourOwnPomodoro'
+  ClientHeight = 162
+  ClientWidth = 292
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -19
+  Font.Name = 'Segoe UI Light'
+  Font.Style = []
+  Icon.Data = {
+    0000010001001010000001000800680500001600000028000000100000002000
+    0000010008000000000000010000000000000000000000010000000100000000
+    000006089B00070E9D0008119E00071A9D00091B9B00091C9B001D2884001523
+    8B0014228C001F2B88001B2994001F2D9A000916A0000C13A7000A1CA3000D18
+    A800131AB200121EB200161EB8000D21AA001125B1001522B9001921BF001429
+    B9002331A1002736A7002C3AAE00313FB5003744BD001924C0001D25C400182F
+    C2001D2AC6001C34CB00292BC2002023C8002225CC002029CB002F32CC002427
+    D100232CD100252ED6002432D5002138D3002139D4002437D8002832DA002936
+    DE00253EDD003335D4002B38E3002E3EE9003B49C4003F4DCB002841E4002D40
+    EA002F43EE002C47EC002F4AF3003047F2003149F400324EF9003450FD003852
+    F9004648DC004452D1004856D7004D5ADA005456DF005D5FDA005E62D0005F65
+    D2007D7ED0007677D8007779DA00505DE1007072E4007D7FE5008283D6008384
+    D9008586DC00888AE200898BE4008A8CE6008D8EEA00BEBFE700C4C7DE00C5C8
+    DF00C0C1EB00C1C2ED00C3C4EF00C4C4F100C5C6F400D6D7F200D7D8F200F0F0
+    FB00000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000FFFFFF000007
+    08080808080808080808080807000A05040404040404040404040404050A0B0F
+    0F0F0D0202030F0F0F0F0F0F0F0B0C1414140D56FF49101414141414140C1915
+    15151159FF4F1115151515151519191818181359FF5016161818181818191B20
+    20201759FF59504A231E2020201B1C2222221E59FFFFFFFFFF4B2022221C1D2D
+    2D2D265CFF522452FF60272D2D1D35313131295CFF522B24FFFF462E31353637
+    3737295CFF522852FFFF32373736423A3A3A2F5CFFFFFFFFFF4E2F3A3A42433B
+    3B3B3A455555554D41333B3B3B43443E3E3E3E3C3434343A3D3E3E3E3E444740
+    3F3F3F3F3F3F3F3F3F3F3F3F404700474C4C4C4C4C4C4C4C4C4C4C4C47008001
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000080010000}
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 25
+  object Label1: TLabel
+    Left = 22
+    Top = -1
+    Width = 5
+    Height = 25
+  end
+  object Label3: TLabel
+    Left = 14
+    Top = 53
+    Width = 5
+    Height = 25
+  end
+  object Label2: TLabel
+    Left = 21
+    Top = 129
+    Width = 74
+    Height = 25
+    Caption = 'Time left:'
+  end
+  object edPomodoroTime: TEdit
+    Left = 138
+    Top = 8
+    Width = 44
+    Height = 33
+    MaxLength = 2
+    NumbersOnly = True
+    TabOrder = 0
+    Text = '25'
+  end
+  object edShortBreakTime: TEdit
+    Left = 138
+    Top = 47
+    Width = 44
+    Height = 33
+    MaxLength = 2
+    NumbersOnly = True
+    TabOrder = 1
+    Text = '5'
+  end
+  object edLongBreakTime: TEdit
+    Left = 138
+    Top = 86
+    Width = 44
+    Height = 33
+    MaxLength = 2
+    NumbersOnly = True
+    TabOrder = 2
+    Text = '10'
+  end
+  object btnStart: TButton
+    Left = 196
+    Top = 15
+    Width = 84
+    Height = 32
+    Caption = 'Start'
+    TabOrder = 3
+    OnClick = btnStartClick
+  end
+  object btnReset: TButton
+    Left = 196
+    Top = 53
+    Width = 84
+    Height = 27
+    Caption = 'Reset'
+    TabOrder = 4
+    OnClick = btnResetClick
+  end
+  object btnStop: TButton
+    Left = 196
+    Top = 87
+    Width = 84
+    Height = 28
+    Caption = 'Stop'
+    TabOrder = 5
+    OnClick = btnStopClick
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 31
+    Top = 173
+    Width = 253
+    Height = 30
+    Visible = False
+    TabOrder = 6
+  end
+  object Memo1: TMemo
+    Left = 295
+    Top = 8
+    Width = 203
+    Height = 146
+    Color = clInactiveCaptionText
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'Segoe UI Light'
+    Font.Style = []
+    Lines.Strings = (
+      'Copyright:'
+      'Anykey 2015'
+      ''
+      'Pomodoro is registered '
+      'trademark.'
+      ''
+      'And also it'#39's a time '
+      'management system,'
+      'you SHOULD use to '
+      'make wonders with your '
+      'productivity'
+      ''
+      'Main rules:'
+      '-- NO distraction till working '
+      'your "Pomodoro time"'
+      '-- Do a "Short break" after '
+      'Pomodoro is done'
+      '-- Every 4 Pomodoro'#39's do a '
+      '"Long break"')
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 7
+  end
+  object RadioButton1: TRadioButton
+    Left = 8
+    Top = 15
+    Width = 115
+    Height = 17
+    Caption = 'Pomodoro'
+    TabOrder = 8
+  end
+  object RadioButton2: TRadioButton
+    Left = 8
+    Top = 55
+    Width = 115
+    Height = 17
+    Caption = 'Short Break'
+    TabOrder = 9
+  end
+  object RadioButton3: TRadioButton
+    Left = 8
+    Top = 86
+    Width = 115
+    Height = 29
+    Caption = 'Long break'
+    TabOrder = 10
+  end
+  object edTimeLeft: TEdit
+    Left = 114
+    Top = 128
+    Width = 55
+    Height = 26
+    Color = clInactiveCaptionText
+    ReadOnly = True
+    TabOrder = 11
+    Text = '0'
+  end
+  object btnAbout: TButton
+    Left = 245
+    Top = 129
+    Width = 32
+    Height = 25
+    Caption = '?'
+    TabOrder = 12
+    OnClick = btnAboutClick
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 216
+    Top = 128
+  end
+end
