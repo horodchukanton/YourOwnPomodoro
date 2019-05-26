@@ -1,7 +1,7 @@
 # YourOwnPomodoro
 My implementation of the Pomodoro timer.
 
-![Interface](horodchukanton.github.com/YourOwnPomodoro/img/pomodoro.png)
+![Interface](./img/pomodoro.png)
 
 ## What is Pomodoro?
 If you are not familiar with pomodoro technique, visit https://en.wikipedia.org/wiki/Pomodoro_Technique
